@@ -1,0 +1,33 @@
+v2.0 raw
+1205	# Fetch
+234		# Load ACC - 0
+0
+0
+1205	# Fetch
+294		# Add to ACC - 1
+0
+0
+1205	# Fetch
+1000	# Stop - 2
+0
+0
+1205	# Fetch
+214		# AND - 3
+0
+0
+1205	# Fetch
+D8		# ZERO - 4
+0
+0
+1205	# Fetch
+2D4		# SUB - 5
+0
+0
+1205	# Fetch
+2304	# STORE ACC - 6
+A 		# 
+0
+1205
+0
+0
+3fff

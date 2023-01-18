@@ -1,0 +1,15 @@
+// Lines that start with two forward slashes are comments.
+// The entries below are hex digits
+// The underscore, _, between the digits is ignored - it's used as a spacer for clarity
+// The right bit of the ieft digit is the expected output
+// The right digit is the input value: we'll just use the rightmost 2 bits for ab.
+// The bits are number 7:0, that is 7 is on the left and 0 on the right
+// bits 7:5 are unused
+// bit 4 is the expected output
+// bits 3:2 are unused
+// bit 1 is the a input
+// bit 0 is the b input
+0_0
+1_1
+1_2
+0_3

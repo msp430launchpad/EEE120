@@ -1,0 +1,243 @@
+$date
+	Thu Sep  2 13:48:36 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module full_adder_top $end
+$scope module four_bit_adder $end
+$var wire 4 ! a [3:0] $end
+$var wire 4 " b [3:0] $end
+$var wire 1 # cin $end
+$var wire 1 $ cout $end
+$var wire 1 % overfl $end
+$var wire 4 & y [3:0] $end
+$var wire 1 ' s9 $end
+$var wire 1 ( s8 $end
+$var wire 1 ) s7 $end
+$var wire 1 * s6 $end
+$var wire 1 + s5 $end
+$var wire 1 , s4 $end
+$var wire 1 - s3 $end
+$var wire 1 . s2 $end
+$var wire 1 / s14 $end
+$var wire 1 0 s13 $end
+$var wire 1 1 s12 $end
+$var wire 1 2 s11 $end
+$var wire 1 3 s10 $end
+$var wire 1 4 s1 $end
+$var wire 1 5 s0 $end
+$var wire 1 6 cout_temp $end
+$scope module full_adder_i0 $end
+$var wire 1 1 a $end
+$var wire 1 0 b $end
+$var wire 1 # cin $end
+$var wire 1 3 cout $end
+$var wire 1 / sum $end
+$upscope $end
+$scope module full_adder_i1 $end
+$var wire 1 ( a $end
+$var wire 1 ' b $end
+$var wire 1 3 cin $end
+$var wire 1 * cout $end
+$var wire 1 2 sum $end
+$upscope $end
+$scope module full_adder_i2 $end
+$var wire 1 , a $end
+$var wire 1 + b $end
+$var wire 1 * cin $end
+$var wire 1 5 cout $end
+$var wire 1 ) sum $end
+$upscope $end
+$scope module full_adder_i3 $end
+$var wire 1 4 a $end
+$var wire 1 . b $end
+$var wire 1 5 cin $end
+$var wire 1 6 cout $end
+$var wire 1 - sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+b0 &
+0%
+0$
+0#
+b0 "
+b0 !
+$end
+#10
+b10 &
+12
+13
+11
+10
+b1 !
+b1 "
+#20
+1)
+b100 &
+02
+1*
+03
+1(
+01
+1'
+00
+b10 !
+b10 "
+#30
+b110 &
+12
+13
+11
+10
+b11 !
+b11 "
+#40
+0)
+0*
+b0 &
+02
+03
+0(
+01
+0'
+00
+b0 !
+b0 "
+#50
+b10 &
+12
+13
+11
+10
+b1 !
+b1 "
+#60
+1)
+b100 &
+02
+1*
+03
+1(
+01
+1'
+00
+b10 !
+b10 "
+#70
+b110 &
+12
+13
+11
+10
+b11 !
+b11 "
+#80
+0)
+0*
+b0 &
+02
+03
+0(
+01
+0'
+00
+b0 !
+b0 "
+#90
+b10 &
+12
+13
+11
+10
+b1 !
+b1 "
+#100
+1)
+b100 &
+02
+1*
+03
+1(
+01
+1'
+00
+b10 !
+b10 "
+#110
+b110 &
+12
+13
+11
+10
+b11 !
+b11 "
+#120
+0)
+0*
+b0 &
+02
+03
+0(
+01
+0'
+00
+b0 !
+b0 "
+#130
+b10 &
+12
+13
+11
+10
+b1 !
+b1 "
+#140
+1)
+b100 &
+02
+1*
+03
+1(
+01
+1'
+00
+b10 !
+b10 "
+#150
+1%
+b0 &
+0)
+1$
+16
+0*
+14
+0(
+1.
+0'
+b1000 !
+b1000 "
+#160

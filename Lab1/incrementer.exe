@@ -1,0 +1,181 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7ff8dff13a90 .scope module, "incrementer_top" "incrementer_top" 2 4;
+ .timescale -9 -9;
+v0x7ff8dff2ab90_0 .net "cry", 0 0, L_0x7ff8dff2ba40;  1 drivers
+v0x7ff8dff2ac20_0 .var/i "exp_out", 31 0;
+v0x7ff8dff2acb0_0 .var "in_a", 3 0;
+v0x7ff8dff2ad40_0 .var "inc", 0 0;
+v0x7ff8dff2ae10_0 .var/i "index", 31 0;
+v0x7ff8dff2aee0_0 .net "sum", 3 0, L_0x7ff8dff2bc10;  1 drivers
+S_0x7ff8dff131d0 .scope module, "incrementer" "incrementer" 2 49, 3 16 0, S_0x7ff8dff13a90;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 1 "inc";
+    .port_info 2 /OUTPUT 1 "cry";
+    .port_info 3 /OUTPUT 4 "y";
+L_0x7ff8dff2bb30 .functor BUFZ 1, L_0x7ff8dff2b950, C4<0>, C4<0>, C4<0>;
+L_0x7ff8dff2b010 .functor BUFZ 1, L_0x7ff8dff2b770, C4<0>, C4<0>, C4<0>;
+L_0x7ff8dff2bba0 .functor BUFZ 1, L_0x7ff8dff2b590, C4<0>, C4<0>, C4<0>;
+L_0x7ff8dff2be10 .functor BUFZ 1, L_0x7ff8dff2b370, C4<0>, C4<0>, C4<0>;
+v0x7ff8dff29d60_0 .net *"_ivl_11", 0 0, L_0x7ff8dff2bb30;  1 drivers
+v0x7ff8dff29e20_0 .net *"_ivl_15", 0 0, L_0x7ff8dff2b010;  1 drivers
+v0x7ff8dff29ec0_0 .net *"_ivl_19", 0 0, L_0x7ff8dff2bba0;  1 drivers
+v0x7ff8dff29f70_0 .net *"_ivl_24", 0 0, L_0x7ff8dff2be10;  1 drivers
+v0x7ff8dff2a020_0 .net "a", 3 0, v0x7ff8dff2acb0_0;  1 drivers
+v0x7ff8dff2a110_0 .net "cry", 0 0, L_0x7ff8dff2ba40;  alias, 1 drivers
+v0x7ff8dff2a1a0_0 .net "inc", 0 0, v0x7ff8dff2ad40_0;  1 drivers
+v0x7ff8dff2a250_0 .net "s0", 0 0, L_0x7ff8dff2af70;  1 drivers
+v0x7ff8dff2a300_0 .net "s1", 0 0, L_0x7ff8dff2b860;  1 drivers
+v0x7ff8dff2a410_0 .net "s10", 0 0, L_0x7ff8dff2b370;  1 drivers
+v0x7ff8dff2a4a0_0 .net "s2", 0 0, L_0x7ff8dff2b950;  1 drivers
+v0x7ff8dff2a550_0 .net "s3", 0 0, L_0x7ff8dff2b090;  1 drivers
+v0x7ff8dff2a600_0 .net "s4", 0 0, L_0x7ff8dff2b680;  1 drivers
+v0x7ff8dff2a6d0_0 .net "s5", 0 0, L_0x7ff8dff2b770;  1 drivers
+v0x7ff8dff2a760_0 .net "s6", 0 0, L_0x7ff8dff2b170;  1 drivers
+v0x7ff8dff2a810_0 .net "s7", 0 0, L_0x7ff8dff2b420;  1 drivers
+v0x7ff8dff2a8e0_0 .net "s8", 0 0, L_0x7ff8dff2b590;  1 drivers
+v0x7ff8dff2aa70_0 .net "s9", 0 0, L_0x7ff8dff2b2d0;  1 drivers
+v0x7ff8dff2ab00_0 .net "y", 3 0, L_0x7ff8dff2bc10;  alias, 1 drivers
+L_0x7ff8dff2af70 .part v0x7ff8dff2acb0_0, 3, 1;
+L_0x7ff8dff2b090 .part v0x7ff8dff2acb0_0, 2, 1;
+L_0x7ff8dff2b170 .part v0x7ff8dff2acb0_0, 1, 1;
+L_0x7ff8dff2b2d0 .part v0x7ff8dff2acb0_0, 0, 1;
+L_0x7ff8dff2bc10 .concat8 [ 1 1 1 1], L_0x7ff8dff2be10, L_0x7ff8dff2bba0, L_0x7ff8dff2b010, L_0x7ff8dff2bb30;
+S_0x7ff8dff09190 .scope module, "half_adder_i0" "half_adder" 3 37, 3 6 0, S_0x7ff8dff131d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "cry";
+L_0x7ff8dff2b370 .functor XOR 1, L_0x7ff8dff2b2d0, v0x7ff8dff2ad40_0, C4<0>, C4<0>;
+L_0x7ff8dff2b420 .functor AND 1, L_0x7ff8dff2b2d0, v0x7ff8dff2ad40_0, C4<1>, C4<1>;
+v0x7ff8dff04b40_0 .net "a", 0 0, L_0x7ff8dff2b2d0;  alias, 1 drivers
+v0x7ff8dff28ba0_0 .net "b", 0 0, v0x7ff8dff2ad40_0;  alias, 1 drivers
+v0x7ff8dff28c40_0 .net "cry", 0 0, L_0x7ff8dff2b420;  alias, 1 drivers
+v0x7ff8dff28cf0_0 .net "sum", 0 0, L_0x7ff8dff2b370;  alias, 1 drivers
+S_0x7ff8dff28df0 .scope module, "half_adder_i1" "half_adder" 3 43, 3 6 0, S_0x7ff8dff131d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "cry";
+L_0x7ff8dff2b590 .functor XOR 1, L_0x7ff8dff2b170, L_0x7ff8dff2b420, C4<0>, C4<0>;
+L_0x7ff8dff2b680 .functor AND 1, L_0x7ff8dff2b170, L_0x7ff8dff2b420, C4<1>, C4<1>;
+v0x7ff8dff29020_0 .net "a", 0 0, L_0x7ff8dff2b170;  alias, 1 drivers
+v0x7ff8dff290c0_0 .net "b", 0 0, L_0x7ff8dff2b420;  alias, 1 drivers
+v0x7ff8dff29180_0 .net "cry", 0 0, L_0x7ff8dff2b680;  alias, 1 drivers
+v0x7ff8dff29230_0 .net "sum", 0 0, L_0x7ff8dff2b590;  alias, 1 drivers
+S_0x7ff8dff29310 .scope module, "half_adder_i2" "half_adder" 3 49, 3 6 0, S_0x7ff8dff131d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "cry";
+L_0x7ff8dff2b770 .functor XOR 1, L_0x7ff8dff2b090, L_0x7ff8dff2b680, C4<0>, C4<0>;
+L_0x7ff8dff2b860 .functor AND 1, L_0x7ff8dff2b090, L_0x7ff8dff2b680, C4<1>, C4<1>;
+v0x7ff8dff29550_0 .net "a", 0 0, L_0x7ff8dff2b090;  alias, 1 drivers
+v0x7ff8dff295f0_0 .net "b", 0 0, L_0x7ff8dff2b680;  alias, 1 drivers
+v0x7ff8dff296b0_0 .net "cry", 0 0, L_0x7ff8dff2b860;  alias, 1 drivers
+v0x7ff8dff29760_0 .net "sum", 0 0, L_0x7ff8dff2b770;  alias, 1 drivers
+S_0x7ff8dff29840 .scope module, "half_adder_i3" "half_adder" 3 55, 3 6 0, S_0x7ff8dff131d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "cry";
+L_0x7ff8dff2b950 .functor XOR 1, L_0x7ff8dff2af70, L_0x7ff8dff2b860, C4<0>, C4<0>;
+L_0x7ff8dff2ba40 .functor AND 1, L_0x7ff8dff2af70, L_0x7ff8dff2b860, C4<1>, C4<1>;
+v0x7ff8dff29a60_0 .net "a", 0 0, L_0x7ff8dff2af70;  alias, 1 drivers
+v0x7ff8dff29b10_0 .net "b", 0 0, L_0x7ff8dff2b860;  alias, 1 drivers
+v0x7ff8dff29bd0_0 .net "cry", 0 0, L_0x7ff8dff2ba40;  alias, 1 drivers
+v0x7ff8dff29c80_0 .net "sum", 0 0, L_0x7ff8dff2b950;  alias, 1 drivers
+    .scope S_0x7ff8dff13a90;
+T_0 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7ff8dff2ad40_0, 0, 1;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x7ff8dff2ae10_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %cmpi/s 16, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %parti/s 4, 0, 2;
+    %store/vec4 v0x7ff8dff2acb0_0, 0, 4;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x7ff8dff2ac20_0, 0, 32;
+    %delay 10, 0;
+    %load/vec4 v0x7ff8dff2aee0_0;
+    %load/vec4 v0x7ff8dff2ac20_0;
+    %parti/s 4, 0, 2;
+    %cmp/ne;
+    %jmp/0xz  T_0.2, 4;
+    %vpi_call 2 24 "$display", "Output mismatch when incrementing for\012entry ", v0x7ff8dff2ae10_0, " expected ", &PV<v0x7ff8dff2ac20_0, 0, 4>, " but got a sum of ", v0x7ff8dff2aee0_0 {0 0 0};
+T_0.2 ;
+    %load/vec4 v0x7ff8dff2ab90_0;
+    %load/vec4 v0x7ff8dff2ac20_0;
+    %parti/s 1, 4, 4;
+    %cmp/ne;
+    %jmp/0xz  T_0.4, 4;
+    %vpi_call 2 27 "$display", "Output mismatch when incrementing for\012entry ", v0x7ff8dff2ae10_0, " expected ", &PV<v0x7ff8dff2ac20_0, 4, 1>, " but got a cry of ", v0x7ff8dff2ab90_0 {0 0 0};
+T_0.4 ;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x7ff8dff2ae10_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ff8dff2ad40_0, 0, 1;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x7ff8dff2ae10_0, 0, 32;
+T_0.6 ;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %cmpi/s 3, 0, 32;
+    %jmp/0xz T_0.7, 5;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %parti/s 4, 0, 2;
+    %store/vec4 v0x7ff8dff2acb0_0, 0, 4;
+    %load/vec4 v0x7ff8dff2acb0_0;
+    %pad/u 32;
+    %store/vec4 v0x7ff8dff2ac20_0, 0, 32;
+    %delay 10, 0;
+    %load/vec4 v0x7ff8dff2aee0_0;
+    %load/vec4 v0x7ff8dff2ac20_0;
+    %parti/s 4, 0, 2;
+    %cmp/ne;
+    %jmp/0xz  T_0.8, 4;
+    %vpi_call 2 39 "$display", "Output mismatch when not incrementing for\012entry ", v0x7ff8dff2ae10_0, " expected ", &PV<v0x7ff8dff2ac20_0, 0, 4>, " but got a sum of ", v0x7ff8dff2aee0_0 {0 0 0};
+T_0.8 ;
+    %load/vec4 v0x7ff8dff2ab90_0;
+    %cmpi/ne 0, 0, 1;
+    %jmp/0xz  T_0.10, 4;
+    %vpi_call 2 42 "$display", "Output mismatch when not incrementing for\012entry ", v0x7ff8dff2ae10_0, " expected ", &PV<v0x7ff8dff2ac20_0, 4, 1>, " but got a cry of ", v0x7ff8dff2ab90_0 {0 0 0};
+T_0.10 ;
+    %load/vec4 v0x7ff8dff2ae10_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x7ff8dff2ae10_0, 0, 32;
+    %jmp T_0.6;
+T_0.7 ;
+    %end;
+    .thread T_0;
+    .scope S_0x7ff8dff13a90;
+T_1 ;
+    %vpi_call 2 54 "$dumpfile", "incrementer_waves.vcd" {0 0 0};
+    %vpi_call 2 55 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7ff8dff131d0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "incrementer_top.v";
+    "incrementer.v";

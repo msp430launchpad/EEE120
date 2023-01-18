@@ -1,0 +1,18 @@
+v2.0 raw
+0    #0 Load
+5    #1 value to load
+3    #2 STORE ACC
+8    #3 ADDRESS
+2    #4 Load
+0    #5 reserved for overwritting, it will be 3 after STORE ACC
+0    #6 ADD
+0    #7
+0    #8 STOP
+0
+0
+0
+0
+0
+0
+0
+0

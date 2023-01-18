@@ -1,0 +1,13 @@
+// Lines that start with two forward slashes are comments.
+// The entries below are hex digits
+// The underscore, _, between the digits is ignored - it's used as a spacer for clarity
+// The left digit is the expected output: we'll just use the right 2 bits for {CRY,SUM}
+// The right digit is the input value: we'll just use the rightmost 3 bits for {A,B,Cin}.
+0_0
+1_1
+1_2
+2_3
+1_4
+2_5
+2_6
+3_7

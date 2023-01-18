@@ -1,0 +1,272 @@
+$date
+	Wed Sep 15 22:00:37 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module four_bit_reg_top $end
+$scope module four_bit_reg $end
+$var wire 1 ! clk $end
+$var wire 4 " d [3:0] $end
+$var wire 1 # enable $end
+$var wire 4 $ q [3:0] $end
+$var wire 1 % reset $end
+$var wire 1 & s8 $end
+$var wire 1 ' s7 $end
+$var wire 1 ( s6 $end
+$var wire 1 ) s5 $end
+$var wire 1 * s4 $end
+$var wire 1 + s3 $end
+$var wire 4 , s2 [3:0] $end
+$var wire 1 - s1 $end
+$var wire 1 . s0 $end
+$var wire 4 / q_temp [3:0] $end
+$scope module DIG_D_FF_AS_1bit_i0 $end
+$var wire 1 ! C $end
+$var wire 1 % Clr $end
+$var wire 1 . D $end
+$var wire 1 - Q $end
+$var wire 1 0 Set $end
+$var wire 1 1 \~Q $end
+$var reg 1 2 state $end
+$upscope $end
+$scope module DIG_D_FF_AS_1bit_i2 $end
+$var wire 1 ! C $end
+$var wire 1 % Clr $end
+$var wire 1 + D $end
+$var wire 1 ( Q $end
+$var wire 1 3 Set $end
+$var wire 1 4 \~Q $end
+$var reg 1 5 state $end
+$upscope $end
+$scope module DIG_D_FF_AS_1bit_i3 $end
+$var wire 1 ! C $end
+$var wire 1 % Clr $end
+$var wire 1 * D $end
+$var wire 1 ' Q $end
+$var wire 1 6 Set $end
+$var wire 1 7 \~Q $end
+$var reg 1 8 state $end
+$upscope $end
+$scope module DIG_D_FF_AS_1bit_i4 $end
+$var wire 1 ! C $end
+$var wire 1 % Clr $end
+$var wire 1 ) D $end
+$var wire 1 & Q $end
+$var wire 1 9 Set $end
+$var wire 1 : \~Q $end
+$var reg 1 ; state $end
+$upscope $end
+$scope module four_bit_mux_i1 $end
+$var wire 4 < a [3:0] $end
+$var wire 4 = b [3:0] $end
+$var wire 1 # sel $end
+$var wire 4 > y [3:0] $end
+$var wire 1 ? s9 $end
+$var wire 1 @ s8 $end
+$var wire 1 A s7 $end
+$var wire 1 B s6 $end
+$var wire 1 C s5 $end
+$var wire 1 D s4 $end
+$var wire 1 E s3 $end
+$var wire 1 F s2 $end
+$var wire 1 G s11 $end
+$var wire 1 H s10 $end
+$var wire 1 I s1 $end
+$var wire 1 J s0 $end
+$scope module two_bit_mux_i0 $end
+$var wire 1 J a $end
+$var wire 1 I b $end
+$var wire 1 # s $end
+$var wire 1 F y $end
+$upscope $end
+$scope module two_bit_mux_i1 $end
+$var wire 1 E a $end
+$var wire 1 D b $end
+$var wire 1 # s $end
+$var wire 1 C y $end
+$upscope $end
+$scope module two_bit_mux_i2 $end
+$var wire 1 B a $end
+$var wire 1 A b $end
+$var wire 1 # s $end
+$var wire 1 @ y $end
+$upscope $end
+$scope module two_bit_mux_i3 $end
+$var wire 1 ? a $end
+$var wire 1 H b $end
+$var wire 1 # s $end
+$var wire 1 G y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+b0 >
+b0 =
+b0 <
+0;
+1:
+09
+08
+17
+06
+05
+14
+03
+02
+11
+00
+b0 /
+0.
+0-
+b0 ,
+0+
+0*
+0)
+0(
+0'
+0&
+1%
+b0 $
+0#
+b0 "
+0!
+$end
+#5
+1!
+#10
+0%
+0!
+#15
+1!
+#20
+0!
+#25
+1!
+#30
+1.
+1+
+1*
+1)
+1F
+1C
+1@
+b1111 ,
+b1111 >
+1G
+1I
+1D
+1A
+1H
+b1111 "
+b1111 =
+1#
+0!
+#35
+01
+1J
+04
+1E
+07
+1B
+0:
+1?
+1-
+12
+1(
+15
+1'
+18
+b1111 $
+b1111 /
+b1111 <
+1&
+1;
+1!
+#40
+1.
+1+
+1*
+1)
+1F
+1C
+1@
+b1111 ,
+b1111 >
+1G
+0D
+0H
+b1010 "
+b1010 =
+0#
+0!
+#45
+1!
+#50
+0.
+0+
+0*
+0)
+0F
+0C
+0@
+b0 ,
+b0 >
+0G
+11
+0J
+14
+0E
+17
+0B
+1:
+0?
+0-
+02
+0(
+05
+0'
+08
+b0 $
+b0 /
+b0 <
+0&
+0;
+1%
+0!
+#55
+1!
+#60
+0%
+0!
+#65
+1!
+#70
+0!
+#75
+1!
+#80
+0I
+0A
+b0 "
+b0 =
+1%
+0!

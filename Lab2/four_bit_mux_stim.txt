@@ -1,0 +1,21 @@
+// Lines that start with two forward slashes are comments.
+// The entries below are hex digits
+// The underscore, _, between the digits is ignored - it's used as a spacer for clarity
+// Number the columns 0-3, where the leftmost column is 0 and the rightmost 3
+// Column 0: is the expected output values for y
+// Column 1: is the select input in the right bit, the left 3 bits are unused
+// Colunn 2: is the a input
+// Colunn 3: is the b input
+// NOTE: Column 1, should only have values of 0 or 1!
+// NOTE: Columns 0, 2, and 3 can have values 0-F.
+// NOTE: Column 0 should match column 2 if S=0
+// NOTE: Column 0 should match column 3 if S=1
+
+2_0_2_1
+1_1_2_1
+0_0_0_0
+0_0_0_0
+0_0_0_0
+0_0_0_0
+0_0_0_0
+0_0_0_0
